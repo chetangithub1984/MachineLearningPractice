@@ -91,7 +91,7 @@ cross_val_score1 = cross_val_score(LogisticRegressionClf,
                                    y,
                                    scoring="accuracy",
                                    cv=5)
-print("Coross validation score is - ", (cross_val_score1))
+print("Coross validation score is - ", cross_val_score1)
 
 # EXAMPLE: Taking the mean of the returned values from cross_val_score
 # gives a cross-validated version of the scoring metric.
