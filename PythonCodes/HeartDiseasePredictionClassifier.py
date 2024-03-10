@@ -68,8 +68,8 @@ LogisticRegressionClf = RandomizedSearchCV(estimator=LogisticRegression(),
                                            verbose=True)
 
 LogisticRegressionClf.fit(X_train, y_train)
-print("Best parameter by Hyper Tunning of Logistic Regression is - " ,LogisticRegressionClf.best_params_)
-print("Logistic Regression score with Hyper Tunning is - ",LogisticRegressionClf.score(X_test, y_test))
+print("Best parameter by Hyper Tunning of Logistic Regression is - ", LogisticRegressionClf.best_params_)
+print("Logistic Regression score with Hyper Tunning is - ", LogisticRegressionClf.score(X_test, y_test))
 
 LogisticRegressionClf = LogisticRegression(solver="liblinear", C=0.23357214690901212)
 LogisticRegressionClf.fit(X_train, y_train)
